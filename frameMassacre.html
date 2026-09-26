@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        background-color: aqua;
+        margin: 5px;
+        border-radius: 5px;
+        border-color: gray;
+    }
+    .vert{
+        flex-direction: column;
+    }
+    .norm{
+        width: 90px;
+        height: 90px;
+    }
+    .tall{
+        width: 90px;
+        height: 140px;
+    }
+    .short{
+        width: 90px;
+        height: 40px;
+    }
+    .long{
+        width: 190px;
+        height: 90px;
+    }
+
+</style>
+<body>
+    <div>
+        <div class="vert">
+            <div>
+                <div class="vert">
+                    <div class="tall box"></div>
+                    <div class="short box"></div>
+                </div>
+                <div class="vert">
+                    <div>
+                        <div class="norm box"></div>
+                        <div class="norm box"></div>
+                    </div>
+                    <div class="long box"></div>
+                </div>
+            </div>
+            <div>
+                <div class="long box"></div>
+                <div class="norm box"></div>
+            </div>
+        </div>
+        <div class="vert">
+            <div class="tall box"></div>
+            <div class="tall box"></div>
+        </div>
+    </div>
+</body>
+</html>
